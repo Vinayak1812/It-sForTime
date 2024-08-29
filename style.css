@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+
+body {
+    background-color: #F7EFE5; /* Light cream background color */
+    text-align: center;        /* Centers text horizontally */
+    display: flex;             /* Enables flexbox layout */
+    justify-content: center;   /* Centers content horizontally */
+    align-items: center;       /* Centers content vertically */
+    height: 100vh;             /* Ensures the body takes up the full viewport height */
+    margin: 0;                 /* Removes default margin */
+    flex-direction: column;    /* Stacks items vertically */
+}
+
+
+/* .clock{
+    background-color: #C8A1E0;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.clock hr{
+    color: black;
+    margin-top: 100px;
+    margin-left: 50%;
+    width: 50%;
+}
+
+.timeForm{
+    background-color: #C8A1E0;
+
+} */
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 100px auto;
+}
+
+
+/* Line representing the second hand */
+.second-hand {
+  position: absolute;
+  width: 1px;
+  height: 80px; /* Length of the hand */
+  background-color: red;
+  top: 20px; /* Position from the top of the clock */
+  left: 50%;
+  transform-origin: bottom center; /* Rotate around the bottom center */
+  transform: rotate(0deg);
+}
+
+.minute-hand {
+    position: absolute;
+    width: 1px;
+    height: 90px; /* Length of the hand */
+    background-color: blue;
+    top: 10px; /* Position from the top of the clock */
+    left: 50%;
+    transform-origin: bottom center; /* Rotate around the bottom center */
+    transform: rotate(0deg);
+}
+
+
+
+.hour-hand {
+    position: absolute;
+    width: 1px;
+    height: 60px; /* Length of the hand */
+    background-color: green;
+    top: 40px; /* Position from the top of the clock */
+    left: 50%;
+    transform-origin: bottom center; /* Rotate around the bottom center */
+    transform: rotate(0deg);
+  }
+
+
+.alarm-hand{
+    position: absolute;
+    width: 1px;
+    height: 90px;
+    left: 50%;
+    background-color: darkblue;
+    top: 10px;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="time" class="timeForm">
+        <label for="appt-time">Choose an appointment time: </label>
+        <input id="appt-time" type="time" name="appt-time" value="" required/>
+        <input type="submit" value="submit">
+      </form>
+
+    <div class="clock">
+        <div class="hour-hand"></div>
+        <div class="minute-hand"></div>
+        <div class="second-hand"></div>
+        <div class="alarm-hand"></div>
+    </div>
+    <div id="displayArea"></div> 
+    <div id="displayTime"></div> 
+    <div id="arriveButton"></div> 
+    <div id="backButton"></div> 
+
+    
+    <script src="document.js"></script>
+</body>
+</html>
